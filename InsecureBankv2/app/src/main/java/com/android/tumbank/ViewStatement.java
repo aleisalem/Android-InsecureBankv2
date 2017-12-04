@@ -1,4 +1,4 @@
-package com.android.insecurebankv2;
+package com.android.tumbank;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -27,15 +27,16 @@ public class ViewStatement extends Activity {
 		Intent intent = getIntent();
 		uname = intent.getStringExtra("uname");
 		//String statementLocation=Environment.getExternalStorageDirectory()+ "/Statements_" + uname + ".html";
-		String FILENAME="Statements_" + uname + ".html";
-		File fileToCheck = new File(Environment.getExternalStorageDirectory(), FILENAME);
-		System.out.println(fileToCheck.toString());
+		//String FILENAME="Statements_" + uname + ".html";
+		String FILENAME = getExternalFilesDir(null) + "/Statements_" + uname + ".html";
+		File fileToCheck = new File(FILENAME);//Environment.getExternalStorageDirectory(), FILENAME);
+		//System.out.println(fileToCheck.toString());
 		if (fileToCheck.exists()) {
 			//Toast.makeText(this, "Statement Exists!!",Toast.LENGTH_LONG).show();
 
 			WebView mWebView = (WebView) findViewById(R.id.webView1);
 			//   Location where the statements are stored locally on the device sdcard
-			mWebView.loadUrl("file://" + Environment.getExternalStorageDirectory() + "/Statements_" + uname + ".html");
+			mWebView.loadUrl("file://" + getExternalFilesDir(null) + "/Statements_" + uname + ".html");
 			mWebView.getSettings().setJavaScriptEnabled(true);
 			mWebView.getSettings().setSaveFormData(true);
 			mWebView.getSettings().setBuiltInZoomControls(true);

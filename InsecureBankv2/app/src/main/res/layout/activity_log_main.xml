@@ -26,7 +26,7 @@
             android:textColor="@color/material_blue_grey_800"
             android:textStyle="bold"
             android:textSize="30sp"
-            android:text="InsecureBankv2"/>
+            android:text="TU Bank"/>
     </TableRow>
 
     <TableRow android:layout_marginTop="20dip" >
@@ -42,7 +42,7 @@
             android:background="@android:drawable/editbox_background"
             android:drawableLeft="@android:drawable/ic_menu_crop"
             android:layout_weight="1"
-            android:singleLine="true">
+            android:maxLines="1">
         </EditText>
     </TableRow>
 
@@ -59,8 +59,8 @@
             android:background="@android:drawable/editbox_background"
             android:drawableLeft="@android:drawable/ic_lock_lock"
             android:layout_weight="1"
-            android:password="true"
-            android:singleLine="true">
+            android:inputType="textPassword"
+            android:maxLines="1">
         </EditText>
     </TableRow>
 
@@ -68,13 +68,13 @@
     <TableRow android:paddingTop="10px" android:gravity="center">
         <Button
             android:id="@+id/button_CreateUser"
-            android:layout_width="wrap_content"
-            android:layout_gravity="center"
-            android:layout_span="2"
-            android:text="Create User"
-            android:textColor="#890000"
-            android:textSize="15sp"
-            android:textStyle="bold" />
+            android:text="Register"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:textColor="@color/wallet_bright_foreground_holo_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/roundbutton"/>
     </TableRow>
 
     <!--<TableRow  android:layout_width="match_parent"-->

@@ -1,4 +1,4 @@
-package com.android.insecurebankv2;
+package com.android.tumbank;
 
 import java.io.UnsupportedEncodingException;
 import java.security.InvalidAlgorithmParameterException;
@@ -21,7 +21,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.android.insecurebankv2.DoLogin;
+import com.android.tumbank.DoLogin;
 import com.marcohc.toasteroid.Toasteroid;
 
 /*

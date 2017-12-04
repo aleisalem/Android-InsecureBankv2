@@ -34,7 +34,7 @@
             android:layout_marginLeft="00dip"
             android:layout_marginRight="20dip"
             android:layout_weight="1"
-            android:singleLine="true">
+            android:maxLines="1">
         </EditText>
         </FrameLayout>
     </TableRow>
@@ -64,7 +64,7 @@
             android:layout_marginLeft="00dip"
             android:layout_marginRight="20dip"
             android:layout_weight="1"
-            android:singleLine="true">
+            android:maxLines="1">
         </EditText>
         </FrameLayout>
     </TableRow>
@@ -79,7 +79,7 @@
             android:layout_weight="1"
             android:padding="20dp"
             android:textColor="@color/wallet_bright_foreground_holo_dark"
-            android:textSize="30sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:background="@drawable/roundbutton"
             />
@@ -110,7 +110,7 @@
             android:layout_marginLeft="00dip"
             android:layout_marginRight="20dip"
             android:layout_weight="1"
-            android:singleLine="true">
+            android:maxLines="1">
         </EditText>
         </FrameLayout>
     </TableRow>
@@ -124,7 +124,7 @@
             android:layout_weight="1"
             android:padding="20dp"
             android:textColor="@color/wallet_bright_foreground_holo_dark"
-            android:textSize="30sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:background="@drawable/roundbutton" />
     </TableRow>

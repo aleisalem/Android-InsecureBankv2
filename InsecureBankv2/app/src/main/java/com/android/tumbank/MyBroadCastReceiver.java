@@ -1,4 +1,4 @@
-package com.android.insecurebankv2;
+package com.android.tumbank;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

@@ -1,4 +1,4 @@
-package com.android.insecurebankv2;
+package com.android.tumbank;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 

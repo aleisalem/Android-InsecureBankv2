@@ -1,7 +1,8 @@
-package com.android.insecurebankv2;
+package com.android.tumbank;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -87,10 +88,12 @@ public class PostLogin extends Activity {
                 doesSUexist();
         if(isrooted==true)
         {
+			root_status.setTextColor(Color.RED);
             root_status.setText("Rooted Device!!");
         }
         else
         {
+			root_status.setTextColor(Color.GREEN);
             root_status.setText("Device not Rooted!!");
         }
     }
